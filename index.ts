@@ -56,7 +56,7 @@ try {
         promptInfo.properties[fileName] = {
             description: `${fileName} ==> ${gameName}\nDo you want to rename the file?`,
             message: 'Must choose (y)es or (n)o',
-            default: config.defaultSelection,
+            default: config['default-selection'],
             required: true,
             pattern: /^[y|n|Y|N]$/
         };
