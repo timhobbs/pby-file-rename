@@ -1,0 +1,14 @@
+---
+db: /mnt/c/path/to/folder/
+vpx-db: /mnt/c/path/to/folder/
+fx3-db: /mnt/c/path/to/folder/
+type: loading-animations
+screenshots:
+    format: png
+    folder: /mnt/c/path/to/folder/
+    output: /mnt/c/path/to/folder/
+loading-animations:
+    format: mp4
+    folder: /mnt/c/path/to/folder/
+    output: /mnt/c/path/to/folder/
+default-selection: y # change to n if you want the default fuzzy match ressponse to be 'no'
