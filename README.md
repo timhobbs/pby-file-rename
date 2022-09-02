@@ -32,9 +32,9 @@ The prompt shows you the name of the current file (`Black Hole - Loading` in thi
 
 > Aside: You can change the default selection if you are worried about making a mistake
 
-### "Renaming"
+### Renaming
 
-The use of "rename" is a misnomer - originally that was what this did, but I eventually opted for copying rather than renaming as there were occasions were the fuzzy match was not so good and renaming caused issues (overwritten files, etc.)
+The action of marking a file to be renamed is only the start. The list of files will be iterated over and your selection will be stored. It is not until you have flagged _every file_ that the renaming will occur. This way, if you make a mistake you can always `ctrl+c` to kill the app and start over. Once you have flagged the last file the renaming will occur based on your choices.
 
 ### Fuzzy matching
 

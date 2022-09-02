@@ -89,7 +89,7 @@ function renameFile(nameMap: any, gameName: string, folder: any, fileName: strin
     const gameDescription = nameMap[gameName];
     const oldFile = `${folder}${fileName}${fileExtension}`;
     const newFile = `${output}${gameDescription}${fileExtension}`;
-    fs.copyFileSync(oldFile, newFile);
+    fs.renameSync(oldFile, newFile);
 
     // Log what we did
     console.log(`Copied: ${oldFile} ==> ${newFile}`);
