@@ -12,7 +12,7 @@ _Assuming_ you have node installed, you will want to install the node package de
 npm i
 ```
 
-## How doI use it?
+## How do I use it?
 
 First, you will want to copy `config-example.yaml` to `config.yaml` and then edit to your system's setup. Using WSL, there re mounts to all your local drives, so it is pretty easy to map the path to PBY DB's, assets, etc.
 
