@@ -12,6 +12,7 @@
     "dependencies": {
         "fast-xml-parser": "^4.0.8",
         "fuzzyset.js": "^1.0.7",
+        "iconv-lite": "^0.6.3",
         "js-yaml": "^4.1.0",
         "lodash": "^4.17.21",
         "lodash-es": "^4.17.21",
@@ -20,8 +21,9 @@
     },
     "devDependencies": {
         "@types/fuzzyset.js": "^0.0.2",
+        "@types/iconv-lite": "^0.0.1",
         "@types/js-yaml": "^4.0.5",
         "@types/lodash-es": "^4.17.6",
-        "@types/prompt": "^1.1.2"
+        "@types/prompt": "^1.1.3"
     }
 }

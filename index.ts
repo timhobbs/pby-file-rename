@@ -2,12 +2,14 @@ import { XMLParser } from 'fast-xml-parser';
 import fs from 'fs';
 import fuzzyset from 'fuzzyset.js';
 import { get } from 'lodash';
+import iconv from 'iconv-lite';
 import prompt from 'prompt';
 import yaml from 'js-yaml';
 
 try {
     const config: any = yaml.load(fs.readFileSync('./config.yaml', 'utf8'));
-    const db = fs.readFileSync(config.db, 'utf8');
+    const buffer = fs.readFileSync(config.db);
+    const db = iconv.decode(buffer, 'windows-1252');
     const parser = new XMLParser({ ignoreAttributes: false, parseAttributeValue: true });
     const parsedDb = parser.parse(db);
     const games = get(parsedDb, 'menu.game', []);
